@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sale-app</title>
+</head>
+<body>
+  <main>
+    <div class="section-banner">
+      <div class="container section-banner__content-wrapper">
+        <img class="section-banner__photo" src="./assets/image/banner.png">
+        <div class="section-banner__text">
+          <p class="section-banner__text-title">🍲Food Order🍲</p>
+          <p>Steps you need to follow: </p>
+          <p>1. Chose menu category</p>
+          <p>2. Add your favourite menu</p>
+          <p>3. Calculate 💸 you need to paid on basket</p>
+        </div>
+      </div>
+    </div>
+    <section class="section-category">
+      <div class="container">
+        <div class="row">
+          <div class="section-category-text">1. Choose Category</div>
+          <div class="input-group mb-3">
+            <select id="section-category-option " class="custom-select js-selection-category">
+              <!-- <option selected>Choose Meal Category</option> -->
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-list">
+      <div class="container">
+        <div class="row">
+          <div class="section-category-text">2. Add your favourite menu</div>
+          <table class="table table-bordered"> 
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Meal Name</th>
+                <th scope="col">Photo</th>
+                <th scope="col">Price</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <div class="img-loader-wrapper d-none">
+              <img class="img-loader" src="./assets/image/loading.gif"/>
+            </div>
+            <tbody class="section-list-meal"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="section-basket">
+      <div class="container">
+        <div class="row">
+          <div class="section-category-text">3. Calculate 💸 you need to paid on basket</div>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Meal Name</th>
+                <th scope="col">Product total</th>
+                <th scope="col">Product Price/Unit</th>
+                <th scope="col">Total Price</th>
+                <th scope="col">Meal Photo</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody class="section-basket-table">
+              <tr class="section-basket-total-price">
+                <th colspan="5" scope="col">Total Price <div class="total-price-all"></div></th>
+                <th colspan="2" scope="col">
+                  <button class="btn btn-sum"><i class="fa fa-plus"></i> Sum All</button>
+                  <button class="btn btn-reset"><i class="fa fa-shopping-basket"></i> Reset Basket</button>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>Nada &copy; 2020</footer>
+</body>
+</html>

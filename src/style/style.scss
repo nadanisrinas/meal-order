@@ -1,0 +1,167 @@
+@import "~bootstrap";
+@font-face {
+  font-family: "poppins_reqular";
+  src: url("../assets/font/poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins_medium";
+  src: url("../assets/font/poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins_semibold";
+  src: url("../assets/font/poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+* {
+  font-family: "poppins_regular", sans-serif;
+}
+
+.section-category {
+  &-text {
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #d12828;
+    margin-bottom: 10px;
+  }
+}
+
+main {
+  margin: 10px;
+}
+.img-meal {
+  height: 100px;
+  width: 150px;
+  border-radius: 5px;
+}
+.btn-reset {
+  margin: 0px auto;
+}
+
+.btn-sum,
+.btn-reset,
+.btn-add-meal,
+.btn-min-meal,
+.btn-delete-meal {
+  color: #fff;
+  background-color: #d12828;
+  &:hover {
+    color: #d12828;
+    background-color: #fff;
+  }
+}
+
+.btn-enter {
+  color: #fff;
+  background-color: #d12828;
+}
+
+.img-loader {
+  width: 100px;
+  height: 100px;
+
+  &-wrapper {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.total-price-all:before,
+.price-meal:before {
+  content: "Rp. ";
+}
+
+footer {
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.section-banner {
+  height: 220px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  .section-banner__content-wrapper {
+    background-color: rgba(0, 0, 0, 0.03);
+    width: 100%;
+    display: block;
+    position: relative;
+    font-size: 1em;
+  }
+
+  .section-banner__text {
+    position: absolute;
+    left: 10px;
+  }
+
+  .section-banner__text-title {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  &__content-wrapper {
+    background-color: rgba(0, 0, 0, 0.03);
+    width: 100%;
+    display: block;
+    position: relative;
+    font-size: 1em;
+  }
+  &__photo {
+    position: absolute;
+    right: 10px;
+    max-height: 200px;
+  }
+  &__text {
+    position: absolute;
+    left: 10px;
+    &-title {
+      font-size: 1.5em;
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section-banner {
+    margin-bottom: 250px;
+    padding: 10px;
+    height: 100%;
+    position: static;
+    display: block;
+    &__content-wrapper {
+      background-color: rgba(0, 0, 0, 0.03);
+      width: 100%;
+      display: block;
+      position: relative;
+      font-size: 1em;
+    }
+    &__photo {
+      position: static;
+      display: block;
+      max-height: 200px;
+    }
+    &__text {
+      position: static;
+      display: block;
+    }
+  }
+
+  .input-group-append {
+    display: none;
+  }
+
+  .btn-sum,
+  .btn-reset {
+    width: 100%;
+  }
+}
